@@ -179,9 +179,8 @@ input[type="submit"] {
   font-weight: 600;
   background: rgb(0,212,255);
   background: linear-gradient(90deg, rgba(0,212,255,1) 7%, rgba(9,9,121,1) 56%, rgba(2,0,36,1) 96%);
-  transition: linear-gradient .8s ease-in-out
+  transition: linear-gradient .8s ease-in-out;
   cursor: pointer;
-
 }
 
 
