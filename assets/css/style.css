@@ -123,20 +123,68 @@ img {
   background-color: #fff;
   text-align: center;
   padding: 100px 0;
+  box-shadow: 6px 24px 75px -1px rgba(0,0,0,0.55);
+  -webkit-box-shadow: 6px 24px 75px -1px rgba(0,0,0,0.55);
+  -moz-box-shadow: 6px 24px 75px -1px rgba(0,0,0,0.55);
 }
 
-form {
-  margin: 30px 0;
-}
-
-form div {
-  margin-bottom: 30px;
-}
+form { margin: 30px 0; }
+form div { margin-bottom: 30px; }
 
 .container {
-  background: url("../img/bg2.jpg") no-repeat;
+  background: url("../img/bg1.jpg") no-repeat;
   background-size: cover;
   padding: 40px 0;
+  animation: img-changer 120s;
+  animation-iteration-count: infinite;
+  transition: all .5s ease-in-out;
+}
+
+@keyframes img-changer {
+  10% {
+    background: url("../img/bg1.jpg") no-repeat;
+    background-size: cover;
+  }
+  20% {
+    background: url("../img/bg2.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  30% {
+    background: url("../img/bg3.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  40% {
+    background: url("../img/bg4.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  50% {
+    background: url("../img/bg5.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  60% {
+    background: url("../img/bg6.jpg") no-repeat;
+    background-size: cover;
+  }
+  70% {
+    background: url("../img/bg7.jpg") no-repeat;
+    background-size: cover;
+  }
+  80% {
+    background: url("../img/bg8.jpg") no-repeat;
+    background-size: cover;
+  }
+  90% {
+    background: url("../img/bg9.jpg") no-repeat;
+    background-size: cover;
+  }
+  100% {
+    background: url("../img/bg10.jpg") no-repeat;
+    background-size: cover;
+  }
 }
 
 h1 {
@@ -187,11 +235,10 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 18%, rgba(9,9,121,1) 44%, rgba(0,212,255,1) 93%);
-  /* background-color: aqua; */
+  box-shadow: 6px 24px 75px -1px rgba(0,0,0,0.55);
+  -webkit-box-shadow: 6px 24px 75px -1px rgba(0,0,0,0.55);
+  -moz-box-shadow: 6px 24px 75px -1px rgba(0,0,0,0.55);
 }
-
-
-
 
 label {
   position: absolute;
@@ -199,14 +246,12 @@ label {
 }
 
 .password-label,
-.email-label {
-  top: 14%;
-}
+.email-label { top: 14%; }
 
 .password-label.active,
 .email-label.active {
-  top: 10%;
-  transition: all .5s ease-in-out;
+  top: -35%;
+  transition: all .2s ease-in-out;
 }
 
 
@@ -222,6 +267,10 @@ label {
   margin-right: 10px;
 }
 
+.logo {
+  width: 30%;
+  margin: 0 auto;
+}
 /* ==========================================================================
  1. LOGIN PAGE STYLING END HERE
 ========================================================================== */
