@@ -98,7 +98,9 @@ sub { bottom: -.25em; }
 
 ul,li {list-style: none;}
 a {text-decoration: none;}
-body { font-family: 'Poppins', sans-serif; }
+body { 
+  font-family: 'Poppins', sans-serif;
+}
 
 img {
   width: 100%;
@@ -108,12 +110,119 @@ img {
   object-fit: cover;
 }
 
+
 /* Global styling End here */
 
 /* ==========================================================================
-  1.PASSWORD GENERATOR STYLING START HERE
+1.LOGIN PAGE STYLING START HERE
 ========================================================================== */
+.login-window {
+  max-width: 1366px;
+  width: 30%;
+  margin: 0 auto;
+  background-color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+form {
+  margin: 30px 0;
+}
+
+form div {
+  margin-bottom: 30px;
+}
+
+.container {
+  background: url("../img/bg2.jpg") no-repeat;
+  background-size: cover;
+  padding: 40px 0;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+input{
+  outline: none;
+  border: none;
+  padding: 8px 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.email,
+.password {
+  position: relative;
+}
+
+input[type="password"],
+input[type="email"] {
+  border-bottom: 5px solid ;
+  transition: all .5s ease-in-out;
+}
+
+input[type="password"]:focus,
+input[type="email"]:focus {
+  border-bottom: 5px solid red;
+}
+
+input[type="submit"] {
+  padding: 15px;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  background: rgb(0,212,255);
+  background: linear-gradient(90deg, rgba(0,212,255,1) 7%, rgba(9,9,121,1) 56%, rgba(2,0,36,1) 96%);
+  transition: linear-gradient .8s ease-in-out
+  cursor: pointer;
+
+}
+
+
+input[type="submit"]:hover {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 18%, rgba(9,9,121,1) 44%, rgba(0,212,255,1) 93%);
+  /* background-color: aqua; */
+}
+
+
+
+
+label {
+  position: absolute;
+  font-size: 18px;
+}
+
+.password-label,
+.email-label {
+  top: 14%;
+}
+
+.password-label.active,
+.email-label.active {
+  top: 10%;
+  transition: all .5s ease-in-out;
+}
+
+
+.email::before {
+  font-family: "FontAwesome";
+  content: "\f007";
+  margin-right: 10px;
+}
+
+.password::before {
+  font-family: "FontAwesome";
+  content: "\f023";
+  margin-right: 10px;
+}
 
 /* ==========================================================================
- 1.PASSWORD GENERATOR STYLING END HERE
+ 1. LOGIN PAGE STYLING END HERE
 ========================================================================== */
